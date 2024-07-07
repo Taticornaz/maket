@@ -1,0 +1,93 @@
+html,
+body {
+    margin: 0;
+    height: 100%;
+}
+
+.container {
+    padding: 10px 15px;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 70% 400px 100px;
+    grid-template-rows: 100px 1fr 100px;
+    grid-template-areas: "header header" "main main";
+}
+
+.header {
+    grid-area: header;
+    background-color: white;
+    grid-template-columns: 1fr 100px;
+    grid-template-rows: 100px;
+    display: grid;
+    color: black;
+    justify-items: flex-start;
+    grid-gap: 120px;
+}
+
+.link {
+    margin: 10px;
+}
+
+.number {
+    grid-column: 4/6;
+    grid-row: 1/2;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+main {
+    grid-area: main;
+    grid-area: 2/1/3/2;
+    color: black;
+    display: grid;
+    grid-template-columns: 600px;
+    grid-row: 100px;
+    grid-gap: 20px;
+}
+
+.one {
+    margin-top: 20px;
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400px;
+}
+
+.two {
+    grid-area: 2/1/3/2;
+}
+
+h1 {
+    font-size: 50px;
+    line-height: 120%;
+    text-transform: uppercase;
+}
+
+.three {
+    grid-column: 2/3;
+    grid-row: 3/2;
+}
+
+.link-project {
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+.link-project:hover {
+    text-decoration: none;
+    color: #f9c67b;
+}
+
+.four {
+    grid-column: 1/2;
+    grid-row: 3/3;
+}
